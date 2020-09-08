@@ -3,12 +3,12 @@ package com.example.quakereport;
 public class EarthQuake {
     private String mMagnitude;
     private String mLocation;
-    private String mDate;
+    private long mTimeInMilliseconds;
 
-public EarthQuake(String magnitude,String location, String date ){
+public EarthQuake(String magnitude,String location, long timeInMilliseconds){
     mMagnitude = magnitude;
     mLocation = location;
-    mDate = date;
+    mTimeInMilliseconds = timeInMilliseconds;
 }
 
     public String getmMagnitude() {
@@ -27,11 +27,11 @@ public EarthQuake(String magnitude,String location, String date ){
         this.mLocation = mLocation;
     }
 
-    public String getmDate() {
-        return mDate;
+    public long getmTimeInMilliseconds() {
+        return mTimeInMilliseconds;
     }
 
-    public void setmDate(String mDate) {
-        this.mDate = mDate;
+    public void setmTimeInMilliseconds(long mTimeInMilliseconds) {
+        this.mTimeInMilliseconds = mTimeInMilliseconds;
     }
 }
