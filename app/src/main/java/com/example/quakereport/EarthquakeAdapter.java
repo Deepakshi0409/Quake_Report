@@ -74,5 +74,5 @@ public class EarthquakeAdapter extends ArrayAdapter<EarthQuake> {
         return dateFormat.format(dateObject);
 
     }
-    }
+    
 
